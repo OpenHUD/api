@@ -27,10 +27,10 @@ An HTTP POST request to the module's endpoint should return tips for a given sit
 POST body describes the situation:
 ```javascript
 {
-    "game": "nlh",                    // game type
-    "bb": 2,                          // bb amount
+    "game": "nlh",                     // game type
+    "bb": 2,                           // bb amount
     "community": ["As", "Kd", "Jc"],   // community cards (empty if none yet)
-    "seats": [{                       // players by seat id, use isButton for positions
+    "seats": [{                        // players by seat id, use isButton for positions
         "playerName": "playerName1",
         "stack": 48,
         "pot": 2,
