@@ -29,7 +29,7 @@ POST body describes the situation:
 {
     "game": "nlh",                    // game type
     "bb": 2,                          // bb amount
-    "community": ['As', 'Kd', Jc'],   // community cards (empty if none yet)
+    "community": ["As", "Kd", "Jc"],   // community cards (empty if none yet)
     "seats": [{                       // players by seat id, use isButton for positions
         "playerName": "playerName1",
         "stack": 48,
