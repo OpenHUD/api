@@ -48,6 +48,7 @@ POST body describes the situation:
         "isFolded": true
     }]
 }
+```
 
 Above example describes the situation on the flop after the button folded pre-flop, hero called in SB and BB checked.
 
