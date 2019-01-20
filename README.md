@@ -10,9 +10,11 @@ An HTTP GET request to the module's endpoint should return the module's metadata
 {
     "title": "Your module's title",             // identifies your module in HUD tips
     "description": "Your module's description", // shown when configuring your module
-    "games": [                                  // list of supported games
-        "nlh"
-    ],
+    "games": [{                                 // list of supported games ("*" for any)
+        "type": "texas-holdem",
+        "bet": "no-limit",
+        "format": "*"
+    }],
     "author": {                                 // identifies module creator, email & URL are optional
         "name": "Your name",
         "email": "youremail@example.org",
@@ -27,7 +29,11 @@ An HTTP POST request to the module's endpoint should return tips for a given sit
 POST body describes the situation:
 ```javascript
 {
-    "game": "nlh",                     // game type
+    "game": {                          // game
+        "type": "texas-holdem",
+        "bet": "no-limit",
+        "format": "cash"
+    },
     "bb": 2,                           // bb amount
     "community": ["As", "Kd", "Jc"],   // community cards (empty if none yet)
     "seats": [{                        // players by seat id, use isButton for positions
