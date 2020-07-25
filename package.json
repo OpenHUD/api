@@ -2,11 +2,10 @@
   "name": "@openhud/api",
   "version": "1.0.0",
   "description": "OpenHUD API",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "",
-    "compile": "babel -d dist/ src/",
-    "prepublish": "npm test && npm run compile"
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
@@ -22,12 +21,7 @@
     "url": "https://github.com/openhud/api/issues"
   },
   "homepage": "https://github.com/openhud/api",
-  "devDependencies": {
-    "@babel/cli": "7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/plugin-transform-strict-mode": "^7.10.4",
-    "@babel/preset-env": "^7.10.4"
-  },
+  "devDependencies": {},
   "dependencies": {},
   "directories": {
     "test": "test"
